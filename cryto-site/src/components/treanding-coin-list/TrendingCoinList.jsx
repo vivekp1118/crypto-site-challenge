@@ -14,7 +14,7 @@ function TrendingCoinList() {
   });
 
   return (
-    <div className="ml-5 mt-4 flex w-full flex-col items-start justify-center gap-[1rem] rounded-[8px] bg-[#fff] p-[0.75rem]">
+    <div className="mt-4 flex w-full flex-col items-start justify-center gap-[1rem] rounded-[8px] bg-[#fff] p-[0.75rem] lg:ml-5">
       <h1 className="text-[22px] font-semibold">Trending Coins (24h)</h1>
 
       {treningCoins.map((item, index) => (

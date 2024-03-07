@@ -1,7 +1,7 @@
 function DetailsNavigator() {
   return (
-    <div className="flex w-full overflow-x-scroll">
-      <div className="my-6 flex w-fit flex-nowrap gap-8 border-b-2 border-[#D3E0E6] font-semibold text-[#3E424A]">
+    <div className="flex w-full overflow-x-scroll ">
+      <div className="my-6 flex w-fit  flex-grow flex-nowrap justify-between  gap-8 border-b-2 border-[#D3E0E6] px-4 font-semibold text-[#3E424A]">
         <a
           href="#overview"
           className="cursor-pointer text-nowrap border-b border-transparent pb-1 focus:border-b-2 focus:border-[#0052FE] focus:text-[#0052FE]"

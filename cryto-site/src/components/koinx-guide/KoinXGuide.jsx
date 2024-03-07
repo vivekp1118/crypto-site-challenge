@@ -1,7 +1,7 @@
 import guideSVG from "../../assets/guide.svg";
 function KoinXGuide() {
   return (
-    <div className="ml-6 mt-32 hidden h-fit w-full rounded-[16px] bg-[#0052FE] px-8 py-4 pt-[3rem] lg:block ">
+    <div className="h-fit w-full rounded-[16px] bg-[#0052FE] px-8 py-4 pt-[3rem] lg:ml-6 lg:mt-32 lg:block ">
       <div className="flex min-w-[200px]  flex-shrink-0 flex-col items-center justify-center gap-4">
         <h1 className="text-center text-[22px] font-semibold text-white">
           Get Started with KoinX for FREE

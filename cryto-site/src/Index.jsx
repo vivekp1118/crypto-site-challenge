@@ -9,16 +9,18 @@ function Index() {
   return (
     <>
       <Navbar />
-      <div className="flex bg-bg-gray p-mobile-x pb-10 sm:p-desktop-x sm:pb-10">
-        <div className="w-full">
-          <Hero />
-          <DetailsNavigator />
-          <CoinDetails />
-          <Sentiment />
-        </div>
-        <div className="ml-6 hidden w-[300px] lg:block ">
-          <KoinXGuide />
-          <TrendingCoinList />
+      <div className="flex flex-col bg-bg-gray">
+        <div className="flex w-full flex-col p-mobile-x pb-10 sm:p-desktop-x sm:pb-10 lg:w-[75%] lg:flex-row">
+          <div className="w-full">
+            <Hero />
+            <DetailsNavigator />
+            <CoinDetails />
+            <Sentiment />
+          </div>
+          <div className="mt-8 lg:ml-6 lg:block lg:w-[300px] ">
+            <KoinXGuide />
+            <TrendingCoinList />
+          </div>
         </div>
       </div>
     </>
