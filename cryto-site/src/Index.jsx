@@ -5,6 +5,8 @@ import KoinXGuide from "./components/koinx-guide/KoinXGuide";
 import TrendingCoinList from "./components/treanding-coin-list/TrendingCoinList";
 import CoinDetails from "./components/coin-details/CoinDetails";
 import Sentiment from "./components/sentiment/Sentiment";
+import About from "./components/about/About";
+import Tokenomics from "./components/tokeneconomics/TokenEconomics";
 function Index() {
   return (
     <>
@@ -16,8 +18,10 @@ function Index() {
             <DetailsNavigator />
             <CoinDetails />
             <Sentiment />
+            <About />
+            <Tokenomics />
           </div>
-          <div className="mt-8 lg:ml-6 lg:block lg:w-[300px] ">
+          <div className="mt-8 lg:ml-6 lg:mt-0 lg:block lg:w-[300px] ">
             <KoinXGuide />
             <TrendingCoinList />
           </div>

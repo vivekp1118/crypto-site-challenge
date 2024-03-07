@@ -25,7 +25,7 @@ function TrendingCoinList() {
           </div>
 
           <span
-            className={`text ml-8 mr-4 rounded-lg px-2 py-1 text-center text-base font-medium ${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "bg-[#EBF9F4] text-[#14B079]" : "bg-red-200 text-red-500"}`}
+            className={`ml-8 mr-4 w-24 rounded-lg px-2 py-1 text-right text-base font-medium ${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "bg-[#EBF9F4] text-[#14B079]" : "bg-red-200 text-red-500"}`}
           >
             <i
               className={`fa-solid fa-caret-${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "up" : "down"}`}

@@ -22,7 +22,7 @@ function Hero() {
     fetchData();
   }, [id]);
   return (
-    <main className="w-full">
+    <main className="w-full border-solid border-[#DEE1E6]">
       <header className="py-4 font-[#3E5765] text-sm">
         Cryptocurrencies <i className="fa-solid fa-angles-right mx-1"></i>
         <span className="font-[#0F1629] font-semibold">{capitalize(id)}</span>
