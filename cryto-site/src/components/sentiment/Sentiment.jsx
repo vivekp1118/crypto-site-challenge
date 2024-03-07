@@ -8,7 +8,10 @@ import AnalystEstimate from "../common/AnylystEstimate";
 
 function Sentiment() {
   return (
-    <div className="mt-8 flex flex-col rounded-md bg-white  p-8">
+    <div
+      className="mt-8 flex flex-col rounded-md bg-white  p-8"
+      id="sentiments"
+    >
       <Header heading="Sentiment" />
       <SubHeader header="Key Events" margin="my-4" />
       <HorizontalNavigator>

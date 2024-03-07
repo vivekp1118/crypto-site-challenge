@@ -2,7 +2,7 @@ import Header from "../common/Header";
 import ProfileCard from "../common/ProfileCard";
 function TeamInfo() {
   return (
-    <div className="mt-8 rounded-md bg-white p-8">
+    <div className="mt-8 rounded-md bg-white p-8" id="team">
       <Header heading={"Team"} />
       <p className="my-6">
         Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu

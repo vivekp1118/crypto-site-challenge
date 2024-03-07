@@ -2,7 +2,7 @@ import Header from "../common/Header";
 import tokennomicsSvg from "../../assets/tokenomics.svg";
 function Tokenomics() {
   return (
-    <div className="mt-8 rounded-md bg-white p-8">
+    <div className="mt-8 rounded-md bg-white p-8" id="tokenomics">
       <Header heading={"Tokenomics"} />
       <h2 className="my-8 text-xl font-semibold">Initial Distribution</h2>
 

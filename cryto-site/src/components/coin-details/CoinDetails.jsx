@@ -5,7 +5,10 @@ import SubHeader from "../common/SubHeader";
 
 function CoinDetails() {
   return (
-    <section className="flex flex-col gap-6 rounded-md bg-white p-8 pb-12">
+    <section
+      className="flex flex-col gap-6 rounded-md bg-white p-8 pb-12"
+      id="fundamentals"
+    >
       <Header heading={"Performance"} />
       <PerformanceIndecator
         array={[
