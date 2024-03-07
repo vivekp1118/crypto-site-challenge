@@ -1,6 +1,6 @@
 import { useEffect, useRef, memo } from "react";
 
-function TradingViewWidget() {
+function TradingViewWidget({ coinSymbol }) {
   const container = useRef();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function TradingViewWidget() {
       {
         "symbols": [
           [
-            "COINBASE:BTCUSD|ALL"
+            "COINBASE:${coinSymbol}USD|ALL"
           ]
         ],
         "chartOnly": true,

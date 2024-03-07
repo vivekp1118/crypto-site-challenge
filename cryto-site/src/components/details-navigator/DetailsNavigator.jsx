@@ -4,7 +4,7 @@ function DetailsNavigator() {
       <div className="my-6 flex w-fit flex-nowrap gap-8 border-b-2 border-[#D3E0E6] font-semibold text-[#3E424A]">
         <a
           href="#overview"
-          className="focus:border-b-3 cursor-pointer  text-nowrap border-b border-transparent pb-1 focus:border-[#0052FE] focus:text-[#0052FE]"
+          className="cursor-pointer text-nowrap border-b border-transparent pb-1 focus:border-b-2 focus:border-[#0052FE] focus:text-[#0052FE]"
         >
           Overview
         </a>
