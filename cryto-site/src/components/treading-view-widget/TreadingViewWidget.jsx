@@ -52,10 +52,6 @@ function TradingViewWidget({ coinSymbol }) {
         "color": "rgba(49, 121, 245, 1)"
       }`;
     container.current.appendChild(script);
-
-    return () => {
-      container.current.removeChild(script);
-    };
   }, []);
   return (
     <div className="tradingview-widget-container" ref={container}>
