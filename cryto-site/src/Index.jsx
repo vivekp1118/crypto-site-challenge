@@ -8,7 +8,23 @@ import Sentiment from "./components/sentiment/Sentiment";
 import About from "./components/about/About";
 import Tokenomics from "./components/tokeneconomics/TokenEconomics";
 import TeamInfo from "./components/team-info/TeamInfo";
+import { useEffect, useState } from "react";
+import HorizontalNavigator from "./components/common/HorizonalScroller";
+import TrendingCarousel from "./components/trending-coin-carousal/TrendingCoinCarousal";
 function Index() {
+  const [treningCoins, setTreandingCoins] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        `https://api.coingecko.com/api/v3/search/trending`,
+      );
+      const data = await response.json();
+      setTreandingCoins(data.coins);
+    };
+    fetchData();
+  });
+
   return (
     <>
       <Navbar />
@@ -25,9 +41,14 @@ function Index() {
           </div>
           <div className="mt-8 lg:ml-6 lg:mt-0 lg:block lg:w-[300px] ">
             <KoinXGuide />
-            <TrendingCoinList />
+            <TrendingCoinList treningCoins={treningCoins.slice(0, 3)} />
           </div>
         </div>
+      </div>
+      <div className="flex w-full flex-col gap-7 overflow-x-scroll p-10">
+        {" "}
+        <TrendingCarousel data={treningCoins} title={"You May Also Like"} />
+        <TrendingCarousel data={treningCoins} title={"Trending Coins"} />
       </div>
     </>
   );

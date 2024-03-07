@@ -1,18 +1,5 @@
 import React, { useState, useEffect } from "react";
-function TrendingCoinList() {
-  const [treningCoins, setTreandingCoins] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        `https://api.coingecko.com/api/v3/search/trending`,
-      );
-      const data = await response.json();
-      setTreandingCoins(data.coins.slice(0, 3));
-    };
-    fetchData();
-  });
-
+function TrendingCoinList({ treningCoins }) {
   return (
     <div className="mt-4 flex w-full flex-col items-start justify-center gap-[1rem] rounded-[8px] bg-[#fff] p-[0.75rem] lg:ml-5">
       <h1 className="text-[22px] font-semibold">Trending Coins (24h)</h1>
@@ -25,7 +12,7 @@ function TrendingCoinList() {
           </div>
 
           <span
-            className={`ml-8 mr-4 w-24 rounded-lg px-2 py-1 text-right text-base font-medium ${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "bg-[#EBF9F4] text-[#14B079]" : "bg-red-200 text-red-500"}`}
+            className={`w-22 ml-8 mr-4 rounded-lg px-2 py-1 text-right text-sm font-medium ${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "bg-[#EBF9F4] text-[#14B079]" : "bg-red-200 text-red-500"}`}
           >
             <i
               className={`fa-solid fa-caret-${item?.item?.data?.price_change_percentage_24h?.usd >= 0 ? "up" : "down"}`}

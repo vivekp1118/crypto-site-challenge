@@ -3,7 +3,8 @@ import hamburger from "../../assets/hamburger.svg";
 import Button from "../common/Button";
 function Navbar() {
   return (
-    <nav className="border-{#D2D2E2} flex h-16 items-center justify-between border-b p-mobile-x shadow-nav-desktop md:h-20 md:p-desktop-x md:shadow-nav-mobile">
+    <nav className="flex h-16 items-center justify-between border border-gray-300 p-mobile-x shadow-lg md:h-20 md:p-desktop-x ">
+      {" "}
       <img src={koinX} className="black h-50px" />
       <div className="hidden items-center gap-11 md:flex ">
         {/* Navigation Links */}
